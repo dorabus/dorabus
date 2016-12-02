@@ -51,16 +51,18 @@
       <div class="row odsunhore">
         <div class="col-md-4">
             <h4 class="nadpisobr">Vieden</h4>
-          <img src="Vieden.jpg" class="img-responsive img-rounded"  alt="Image">
-          
+           <A HREF="http://dorabus.esy.es/page_Vieden.php#"><img src="vieden1.jpg" class="img-responsive img-rounded"  alt="Image">
+            </a>
         </div>
         <div class="col-md-4">
         <h4 class="nadpisobr">Londyn</h4>
-          <img src="london.jpg" class="img-responsive img-rounded " alt="Image">
+           <A HREF="http://dorabus.esy.es/page_London.php#"><img src="london.jpg" class="img-responsive img-rounded"  alt="Image">
+            </a>
         </div>
         <div class="col-md-4">
         <h4 class="nadpisobr">Krakow</h4>
-          <img src="Krakow.jpg" class="img-responsive img-rounded"  alt="Image">
+          <A HREF="http://dorabus.esy.es/page_Krakow.php#"><img src="Krakow.jpg" class="img-responsive img-rounded"  alt="Image">
+            </a> 
         </div>
       </div>
       <hr>
@@ -115,16 +117,19 @@
              <div class="row odsunhore">
               <div class="col-md-4">
                   <h4 class="nadpisobr">Praha</h4>
-                <img src="praha1.jpg" class="img-responsive img-rounded"  alt="Image">
+               <A HREF="http://dorabus.esy.es/page_Praha.php#"><img src="praha1.jpg" class="img-responsive img-rounded"  alt="Image">
+            </a> 
                 
               </div>
               <div class="col-md-4">
               <h4 class="nadpisobr">Pariz</h4>
-                <img src="paris1.jpg" class="img-responsive img-rounded " alt="Image">
+                <A HREF="http://dorabus.esy.es/page_Pariz.php#"><img src="paris1.jpg" class="img-responsive img-rounded " alt="Image">
+            </a> 
               </div>
               <div class="col-md-4">
               <h4 class="nadpisobr">Rim</h4>
-                <img src="rim1.jpg" class="img-responsive img-rounded"  alt="Image">
+                <A HREF="http://dorabus.esy.es/page_Rim.php#"><img src="rim1.jpg" class="img-responsive img-rounded"  alt="Image">
+            </a> 
               </div>
             </div>
       </div>
