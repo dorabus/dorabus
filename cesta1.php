@@ -4,7 +4,7 @@
 
 <head>
 
-<title>O nás</title>
+<title>Spojenia</title>
 
   <meta charset="utf-8">
 
@@ -48,7 +48,7 @@
 
   <div class="row">
 
-         <nav class="navbar navbar-default obly">
+        <nav class="navbar navbar-default obly">
 
   <div class="container-fluid">
 
@@ -66,7 +66,7 @@
 
       </button>
 
-      <a class="navbar-brand" href="index.php" href="#"><img src="png4.png" alt="logonavbar" class="navlogo" style="width:95px;  max-height:70px;
+        <a class="navbar-brand" href="index.php" href="#"><img src="png4.png" alt="logonavbar" class="navlogo" style="width:95px;  max-height:70px;
 
 						margin-top:-12px;"></a>
 
@@ -75,7 +75,10 @@
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 
       <ul class="nav navbar-nav">
-<li><a href="index.php" href="#">Vyhladanie spojenia</a></li>
+
+        <li><a href="index.php" href="#">Vzh�adanie spojenia</a></li>
+
+
         <li><a href="kontakt.php" href="#">Kontakt</a></li>
 
         <li><a href="o_nas.php" href="#">O nas</a></li>
@@ -100,87 +103,103 @@
 
 
 
- <div class="row">
-
-
-
-  <div class="col-md-9">    
-
-<h2>Ste pripravení na dobrodružstvo?</h2> 
-
-<h3>Už nechcete sedieť doma ale spoznávať nové kúty Európy?</h3>
-
-<h1> Sme tu pre Vás! </h1>
-
-Sme mladý a dinamický tím, ktorý Vás zavedie na tie najzaujímavejšie miesta v Európe. Poskytujeme vysoký štandard služieb. To znamená pohodlie a občerstvenie v autobuse počas celej jazdy.
-
-Cestu Vám tiež spríjemní veselý personál či dobrý film alebo hudba, ktorá je nonstop prístupná v našich autobusoch. V noci Vám zase zaručíme ničím nerušený spánok a ráno kávu. To všetko a ešte viac za ceny, ktoré sú prijateľné pre každého. Tak neváhajte a prezrite si našu ponuku zájazdov.
-
-V prípade akýchkoľvek otázok sa na nás môžete obrátiť na kontakt uvedený nižšie. Tešíme sa na spoločnú cestu!
 
 
 
 
-
-   </div>
-
-
-
-  </div>
-
-
+  <div><h2>Vyhľadané spojenia</h2></div>
 
  
 
-     <hr>
+  <?php
 
-      <div class="row">
+include("connect.php");
 
-       <div class="col-sm-12"><h3></h3>
+$prem1 = $_POST["abc"];
 
-       </div> 
+$prem2 = $_POST['abc2'];
 
-             <div class="row odsunhore">
 
-              <div class="col-md-4">
 
-                  <h4 class="nadpisobr">Praha</h4>
 
-               <A HREF="http://dorabus.esy.es/page_Praha.php#"><img src="praha1.jpg" class="img-responsive img-rounded"  alt="Image">
 
-            </a> 
+$sql = "SELECT * FROM Zajazdy WHERE  Trat = '".$prem1."' AND Kedy = '".$prem2."'";
 
-                
+$result = mysql_query($sql);
 
-              </div>
+$row = mysql_fetch_array($result);
 
-              <div class="col-md-4">
 
-              <h4 class="nadpisobr">Pariz</h4>
 
-                <A HREF="http://dorabus.esy.es/page_Pariz.php#"><img src="paris1.jpg" class="img-responsive img-rounded " alt="Image">
+if($prem2 == $row['Kedy']) {    
 
-            </a> 
+     echo '<font size="4"'." face='Arial'>";
 
-              </div>
+	   echo  "Zájad: " .$row['Trat']."<br>";
 
-              <div class="col-md-4">
+     echo    " Dátum: " .$row['Kedy']. "<br> ";
 
-              <h4 class="nadpisobr">Rim</h4>
+     echo " " .$row['Popos']. "<br> " ;
 
-                <A HREF="http://dorabus.esy.es/page_Rim.php#"><img src="rim1.jpg" class="img-responsive img-rounded"  alt="Image">
+     echo "Cena: " .$row['Cena']. " Eur "."<br> " ;
 
-            </a> 
+      /*
 
-              </div>
+      echo '<form action="index.php" method="POST">';
 
-            </div>
+      echo '<input type="submit" class="btn btn-warning" value="SPAŤ" ';
 
-      </div>
+      echo '</form>';
 
-               
+     echo '<form action="objednat.php" method="POST">'.'<input type="submit" class="btn btn-warning" value="OBJEDNAŤ">';  */
 
-  
+    echo '<font size="2"'." face='Arial'>"; 
+
+    }
+
+    else { 
+
+    echo '<font size="4"'." face='Arial'>";
+
+    echo "Ľutujeme, ale vo Vami zvolenom termíne nie je žiadna cesta do vybranej destinácie. ". "<br>" ;
+
+    /*echo '<form action="index.php" method="POST">';
+
+    echo '<input type="submit" class="btn btn-warning" value="SPAŤ">';  */                          
+
+    echo '<font size="2"'." face='Arial'>"; 
+
+    }
+
+?>
+
+   
+
+     <div class="row">
+
+        <div class="col-md-1"> 
+
+       <form action="index.php" method="POST">
+
+       <button type="submit" class="btn btn-warning"> SPAŤ</button>
+
+       </form>  </div>
+
+         <div class="col-md-11">
+
+          <form action="objednat.php" method="POST">
+
+       <button type="submit" class="btn btn-warning"> OBJEDNAŤ</button>
+
+       </form> </div>
+
+       </div>
+
+    <br>
+
+    
+
+    
 
   
 

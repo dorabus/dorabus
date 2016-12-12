@@ -76,8 +76,7 @@
 
       <ul class="nav navbar-nav">
 
-        <li><a href="#">Prihlasenie/Registracia</a></li>
-
+        <li><a href="index.php" href="#">Vyhladanie spojenia</a></li>
         <li><a href="kontakt.php" href="#">Kontakt</a></li>
 
         <li><a href="o_nas.php" href="#">O nas</a></li>
@@ -104,86 +103,180 @@
 
 <div><h1>Kontakt</h1></div>
 
+
+
  
 
+
+
 <br>
 
-<h4>Nonstop zákaznícka linka:</h4> +421904 888 888
+
+
+<h3>Nonstop zÃ¡kaznÃ­cka linka:</h3> +421904 888 888
+
 <br>
+
 <br>
+
+
 
    
+
 <div id="contact-additional-info" class="">
+
   <div class="col-lg-2 col-md-3 col-sm-4 col-xs-12">
-    <h4>Informácie o doprave</h4>
+
+    <h4>InformÃ¡cie o doprave</h4>
+
  <span><strong>Telefon:</strong> <a href="">+421024741</a></span>
+
 <p>    <span><strong>e-mail:</strong> <a href="info@dorabus.sk">info@dorabus.sk</a></span>
+
 	
+
   </div>
+
   
+
  
 
+
+
   <div class="col-lg-2 col-md-3 col-sm-4 col-xs-12">
-    <h4>Straty a nálezy</h4>
+
+    <h4>Straty a nÃ¡lezy</h4>
+
     <span><strong>Telefon:</strong> <a href="">+421024741</a></span>
+
    <p> <span><strong>e-mail:</strong> <a href="">straty@dorabus.sk</a></span></p>
+
   </div>
-  
+
   
 
+  
+
+
+
   <div class="col-lg-2 col-md-3 col-sm-4 col-xs-12">
-    <h4>Rezervácie</h4>
+
+    <h4>RezervÃ¡cie</h4>
+
     <span><strong>Telefon:</strong> <a href="">+421024741</a></span>
+
     <p><span><strong>e-mail:</strong> <a href="">predaj@dorabus.sk</a></span></p>
+
   </div>  
+
   
 
 
+
+
+
   <div class="col-lg-2 col-md-3 col-sm-4 col-xs-12">
-    <h4>Straty a nálezy</h4>
+
+    <h4>Straty a nÃ¡lezy</h4>
+
  <span><strong>Telefon:</strong> <a href="">+421024741</a></span>
+
    <p> <span><strong>e-mail:</strong> <a href="mailto:straty@dorabus.sk">straty@dorabus.sk</a></span></p>
+
 	
+
   </div>
+
  
 
+
+
   <div class="col-lg-2 col-md-3 col-sm-4 col-xs-12">
-    <h4>Pripomienky a sažnosti</h4>
+
+    <h4>Pripomienky a sÅ¥aÅ¾nosti</h4>
+
  <span><strong>Telefon:</strong> <a href="">+421024741</a></span>
+
    <p> <span><strong>e-mail:</strong> <a href="mailto:pripomienky@dorabus.sk">staznost@dorabus.sk</a></span></p>
+
 	
+
   </div>
+
  </div>
 
 
+
+
+
  
 
- 
 
 
-               
-
-  
-
-
-
-      
-   
-   
-               
-
-  
-
-  
-
-      
+       <hr>
 
       <div class="row">
 
-      
-        <div class="col-md-4">
+       <div class="col-sm-12"><h3></h3>
+
+       </div> 
+
+             <div class="row odsunhore">
+
+              <div class="col-md-4">
+
+                  <h4 class="nadpisobr">Praha</h4>
+
+               <A HREF="http://dorabus.esy.es/page_Praha.php#"><img src="praha1.jpg" class="img-responsive img-rounded"  alt="Image">
+
+            </a> 
+
+                
+
+              </div>
+
+              <div class="col-md-4">
+
+              <h4 class="nadpisobr">Pariz</h4>
+
+                <A HREF="http://dorabus.esy.es/page_Pariz.php#"><img src="paris1.jpg" class="img-responsive img-rounded " alt="Image">
+
+            </a> 
+
+              </div>
+
+              <div class="col-md-4">
+
+              <h4 class="nadpisobr">Rim</h4>
+
+                <A HREF="http://dorabus.esy.es/page_Rim.php#"><img src="rim1.jpg" class="img-responsive img-rounded"  alt="Image">
+
+            </a> 
+
+              </div>
+
+            </div>
+
+      </div>
+
+
+
+ 
+
+
+
+               
+
+  
+
+  
 
       <hr>
+
+      <div class="row">
+
+        <div class="col-md-4">
+
          <p><img src="PNG.png" alt="logonavbar" class="navlogo" style="width:165px;  height:100px;
 
 						margin-left:-25px;"></p>
@@ -202,15 +295,13 @@
 
         <div class="col-md-4">
 
-      <hr>
           <iframe width="370 " height="246" frameborder="0" style="border:0" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2663.6446497893353!2d17.11812465094493!3d48.1170902604652!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x476c89a8764dc399%3A0xdf39054c9f157512!2sStaroh%C3%A1jska+2900%2F8%2C+851+02+Petr%C5%BEalka!5e0!3m2!1ssk!2ssk!4v1479394622032" allowfullscreen></iframe>
 
         </div>
 
         <div class="col-md-4">
 
-      <hr>
-          <h4 class="red" align="middle";><b>Otváracie hodiny:</b></h4>
+          <h4 class="red" align="middle";><b>OtvÃ¡racie hodiny:</b></h4>
 
       <p class="grey2" align="middle";>  PO: 8:00 - 20:00</p>
 
@@ -218,7 +309,7 @@
 
         <p class="grey2" align="middle";>  ST: 8:00 - 20:00</p>
 
-      <p class="grey2" align="middle";>  ŠT: 8:00 - 20:00</p>
+      <p class="grey2" align="middle";>  Å T: 8:00 - 20:00</p>
 
         <p class="grey2" align="middle";>  PI: 8:00 - 20:00</p>
 

@@ -154,16 +154,16 @@
 
 
 
-        <li><a href="#">Prihlasenie/Registracia</a></li>
+        <li><a href="index.php" href="#">Vyhladanie spojenia</a></li>
 
 
 
-        <li><a href="#">Kontakt</a></li>
+
+        <li><a href="kontakt.php" href="#">Kontakt</a></li>
 
 
 
-        <li><a href="#">O nas</a></li>
-
+        <li><a href="o_nas.php"href="#">O nas</a></li>
 
 
       </ul>
