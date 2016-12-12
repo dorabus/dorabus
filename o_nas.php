@@ -4,7 +4,7 @@
 
 <head>
 
-  <title>Dora bus</title>
+<title>O nás</title>
 
   <meta charset="utf-8">
 
@@ -32,6 +32,8 @@
 
 <body>
 
+
+
 <div class="container">
 
   <div class="row">
@@ -46,7 +48,7 @@
 
   <div class="row">
 
-        <nav class="navbar navbar-default obly">
+         <nav class="navbar navbar-default obly">
 
   <div class="container-fluid">
 
@@ -73,8 +75,7 @@
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 
       <ul class="nav navbar-nav">
-
-        <li><a href="index.php" href="#">Vyhladanie spojenia</a></li>
+<li><a href="index.php" href="#">Vyhladanie spojenia</a></li>
         <li><a href="kontakt.php" href="#">Kontakt</a></li>
 
         <li><a href="o_nas.php" href="#">O nas</a></li>
@@ -97,132 +98,41 @@
 
 </div>
 
-      <div class="row odsunhore">
 
-        <div class="col-md-4">
 
-            <h4 class="nadpisobr">Vieden</h4>
-
-           <A HREF="http://dorabus.esy.es/page_Vieden2.php#"><img src="vieden1.jpg" class="img-responsive img-rounded"  alt="Image">
-
-            </a>
-
-        </div>
-
-        <div class="col-md-4">
-
-        <h4 class="nadpisobr">Londyn</h4>
-
-           <A HREF="http://dorabus.esy.es/page_London.php#"><img src="london.jpg" class="img-responsive img-rounded"  alt="Image">
-
-            </a>
-
-        </div>
-
-        <div class="col-md-4">
-
-        <h4 class="nadpisobr">Krakow</h4>
-
-          <A HREF="http://dorabus.esy.es/page_Krakow.php#"><img src="Krakow.jpg" class="img-responsive img-rounded"  alt="Image">
-
-            </a> 
-
-        </div>
-
-      </div>
-
-      <hr>
-
-      
-
-     <div class="row">
-
-    <div class="col-md-8">
-
-    <form action="cesta1.php" method="POST">
-
-<div class="container">
-
-<br>
-
-  <div class="col-md-6 ">
-
-  <h2 class="text-center red" id="Booking">Vyhľadanie spojenia</h2>
-
-  <p><b>Výber zájazdu:</b></p>
-
-  <select class="selectpicker form-control" multiple title="Zadajte" name="abc" id="haha" data-live-search="true">
-
-    <?php
-
-    Include('connect.php');
-
-    $sql = "SELECT DISTINCT Trat FROM Zajazdy";
-
-    $result = mysql_query($sql);
-
-   
-
-       
-
-    while($row = mysql_fetch_array($result))
-
-    {
-
-         ?>
-
-    
-
-          <option>  <?php echo $row['Trat']; ?> </option>
-
-          <?php
-
-};
+ <div class="row">
 
 
 
-       ?>
+  <div class="col-md-9">    
+
+<h2>Ste pripravení na dobrodružstvo?</h2> 
+
+<h3>Už nechcete sedieť doma ale spoznávať nové kúty Európy?</h3>
+
+<h1> Sme tu pre Vás! </h1>
+
+Sme mladý a dinamický tím, ktorý Vás zavedie na tie najzaujímavejšie miesta v Európe. Poskytujeme vysoký štandard služieb. To znamená pohodlie a občerstvenie v autobuse počas celej jazdy.
+
+Cestu Vám tiež spríjemní veselý personál či dobrý film alebo hudba, ktorá je nonstop prístupná v našich autobusoch. V noci Vám zase zaručíme ničím nerušený spánok a ráno kávu. To všetko a ešte viac za ceny, ktoré sú prijateľné pre každého. Tak neváhajte a prezrite si našu ponuku zájazdov.
+
+V prípade akýchkoľvek otázok sa na nás môžete obrátiť na kontakt uvedený nižšie. Tešíme sa na spoločnú cestu!
+
+
+
+
+
+   </div>
+
+
+
+  </div>
+
+
 
  
 
-
-
- </select>
-
-<p><b>Výber dátumu: </b></p>  
-
-
-
-<input style="width:268px;" type="date" name="abc2" max="2017-12-31" size="140">
-
-
-
-
-
-<br>
-
-<br>
-<button type="submit" class="btn btn-warning"><span class="glyphicon glyphicon-search"></span> Vyhľadaj</button>
-
-                
-
-  </div>
-
-  
-
-  </form>
-
-  </div>
-
-  </div>
-
-  <div class="col-md-4"><img src="logomap.JPG" class="img-responsive" style="width:650px;  height:200px;
-
-						margin-top:40px; margin-left:-50px;"></div>
-
-  </div>
-
-    <hr>
+     <hr>
 
       <div class="row">
 
@@ -236,7 +146,7 @@
 
                   <h4 class="nadpisobr">Praha</h4>
 
-                <A HREF="http://dorabus.esy.es/page_Praha.php#"><img src="praha1.jpg" class="img-responsive img-rounded"  alt="Image">
+               <A HREF="http://dorabus.esy.es/page_Praha.php#"><img src="praha1.jpg" class="img-responsive img-rounded"  alt="Image">
 
             </a> 
 
@@ -260,13 +170,19 @@
 
                 <A HREF="http://dorabus.esy.es/page_Rim.php#"><img src="rim1.jpg" class="img-responsive img-rounded"  alt="Image">
 
-            </a>  
+            </a> 
 
               </div>
 
             </div>
 
       </div>
+
+               
+
+  
+
+  
 
       <hr>
 
@@ -322,11 +238,32 @@
 
       </div>
 
+      <script>
+
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+
+
+  ga('create', 'UA-88354099-1', 'auto');
+
+  ga('send', 'pageview');
+
+
+
+</script>
+
+</div>
+
+
+
 </body>
 
 
 
 </html>
-
-
-

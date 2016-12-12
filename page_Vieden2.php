@@ -4,7 +4,7 @@
 
 <head>
 
-  <title>Dora bus</title>
+<title>Vieden</title>
 
   <meta charset="utf-8">
 
@@ -31,6 +31,8 @@
 </head>
 
 <body>
+
+
 
 <div class="container">
 
@@ -74,10 +76,15 @@
 
       <ul class="nav navbar-nav">
 
-        <li><a href="index.php" href="#">Vyhladanie spojenia</a></li>
+       <li><a href="index.php" href="#">Vyhladanie spojenia</a></li>
+
+
+
         <li><a href="kontakt.php" href="#">Kontakt</a></li>
 
-        <li><a href="o_nas.php" href="#">O nas</a></li>
+
+
+        <li><a href="o_nas.php"href="#">O nas</a></li>
 
       </ul>
 
@@ -97,132 +104,135 @@
 
 </div>
 
-      <div class="row odsunhore">
 
-        <div class="col-md-4">
 
-            <h4 class="nadpisobr">Vieden</h4>
 
-           <A HREF="http://dorabus.esy.es/page_Vieden2.php#"><img src="vieden1.jpg" class="img-responsive img-rounded"  alt="Image">
 
-            </a>
 
-        </div>
 
-        <div class="col-md-4">
+ <div><h1>Viedeň</h1></div>
 
-        <h4 class="nadpisobr">Londyn</h4>
+ 
 
-           <A HREF="http://dorabus.esy.es/page_London.php#"><img src="london.jpg" class="img-responsive img-rounded"  alt="Image">
+  <div class="row">
 
-            </a>
+  <div class="col-md-7">
 
-        </div>
 
-        <div class="col-md-4">
 
-        <h4 class="nadpisobr">Krakow</h4>
+  Štát:<b> Rakúsko</b>
 
-          <A HREF="http://dorabus.esy.es/page_Krakow.php#"><img src="Krakow.jpg" class="img-responsive img-rounded"  alt="Image">
+  <br>Mena:<b> Euro   </b>
 
-            </a> 
+  <br>
 
-        </div>
+  <br>
 
-      </div>
+Viedeň je hlavné a najväčšie mesto Rakúska, ležiace na rieke Dunaj.  
 
-      <hr>
+Viedeň má 1 794 770 obyvateľov a metropolitná oblasť, ktorú vytvára, okolo 2,2 milióna. 
 
-      
+Je politickým, priemyselným, hospodárskym a kultúrnym centrom štátu. Mesto leží na úpätí Viedenského lesa („Wiener Wald“). 
 
-     <div class="row">
+Pre zaujímavú polohu, históriu a impozantnú výstavbu mesto nazývajú aj Dunajskou metropolou. 
 
-    <div class="col-md-8">
+Spolu s Bratislavou, ktorá sa nachádza iba 60 km východne od Viedne, vytvára najtesnejšie zoskupenie dvoch hlavných miest v Európe.
 
-    <form action="cesta1.php" method="POST">
+Je sídlom mnohých medzinárodných organizácií OSN a iných inštitúcií, napr. UNIDO, OPEC, IAEA, CTBTO, OSCE, ako aj UNCITRAL. 
 
-<div class="container">
+Historické centrum Viedne bolo v roku 2001 zapísané na Zoznam svetového dedičstva UNESCO.
 
-<br>
 
-  <div class="col-md-6 ">
 
-  <h2 class="text-center red" id="Booking">Vyhľadanie spojenia</h2>
+ 
 
-  <p><b>Výber zájazdu:</b></p>
+  
 
-  <select class="selectpicker form-control" multiple title="Zadajte" name="abc" id="haha" data-live-search="true">
+ </div>
 
-    <?php
+  <div class="col-md-5">
 
-    Include('connect.php');
+      <img src="vieden_vlajka.jpg" class="img-responsive img-rounded"  alt="Image">
 
-    $sql = "SELECT DISTINCT Trat FROM Zajazdy";
+         
 
-    $result = mysql_query($sql);
+    </div>
+
+</div>
 
    
 
-       
-
-    while($row = mysql_fetch_array($result))
-
-    {
-
-         ?>
-
     
 
-          <option>  <?php echo $row['Trat']; ?> </option>
+  <div class="row">
 
-          <?php
+  <div class="col-md-4">
 
-};
+     <img src="vieden2.jpg" class="img-responsive img-rounded"  alt="Image">
+
+          
+
+    </div>
+
+  <div class="col-md-8">
+
+   <h3> Dejiny</h3>
+
+  Už v 1. storočí tu bol tábor rímskej légie a civilná osada nazývaná Vindobona. Počas markomanských vojen (166 – 180) sa tu zdržiaval rímsky cisár Marcus Aurelius, ktorý tu aj zomrel. Na konci 4. storočia vojenská posádka opustila tábor, s vojakmi odišla aj väčšina civilného obyvateľstva, zvyšok civilistov sa usadil v dvoch samostatných dedinách, ktoré vznikli na mieste vojenského tábora. Vláda Rimanov skončila približne v 5. storočí príchodom germánskych kmeňov. V písomných záznamoch sa mesto spomína v roku 881 ako Wenia. V roku 1137 prvýkrát ako Wien. Od roku 1156 bola sídlom rodu Babenbergovcov a v roku 1221 dostala ako druhé mesto v rakúskom vojvodstve (po Ennse (1212)) mestské práva[3]Po vymretí dynastie Babenbergovcov si robil nároky na ich územie Přemysl Otakar II., ktorého však porazil Rudolf I. Habsburský v bitke na Moravskom poli. Za vlády rodu Habsburgovcov sa Viedeň stala sídlom cisára Svätej ríše rímskej. Od roku 1365 tu sídli univerzita a je aj sídlom biskupa. Viedeň je v súčasnosti po New Yorku a Ženeve tretím centrom, v ktorom sídlia orgány OSN. Sídli tu aj organizácia pre atómovú energiu. Viedeň je obľúbeným mestom medzinárodných konferencií a rokovaní na najvyššej diplomatickej úrovni.
+
+ 
+
+  </div>
+
+  </div>
+
+ 
+
+ 
+
+  <div class="row">
+
+   <div class="col-md-7"> <h3>Poloha a geografia</h3>
+
+Viedeň leží v rámci Rakúska dosť excentricky, pri jeho severovýchodnom okraji. Kým od najvzdialenejšej časti rakúskeho územia (Vorarlbersko) je vzdušnou čiarou cez 500 km ďaleko, je jej centrum vzdialené iba okolo 55 km od hranice s Českom a Maďarskom a len 40 km od hranice so Slovenskom.
 
 
 
-       ?>
+Príčinou je historický územný vývoj Rakúska, ktorého jadro zostávalo v Dolnom Rakúsku, ale z niekdajších dŕžav sa udržali prakticky len tie alpského, juhozápadne od Viedne. Sama Viedeň sa nachádza na východnom úbočí Viedenského lesa, pod miestom, kde Dunaj preteká Korneuburskou bránou a vstupuje do Viedenskej panvy.
+
+    </div>
+
+   <div class="col-md-5">
+
+      <img src="vieden3.jpg" class="img-responsive img-rounded"  alt="Image">
+
+          
+
+    </div>
+
+    </div> 
+
+   
 
  
 
 
 
- </select>
+  <form action="index.php" method="POST">
 
-<p><b>Výber dátumu: </b></p>  
-
-
-
-<input style="width:268px;" type="date" name="abc2" max="2017-12-31" size="140">
-
-
-
-
-
-<br>
-
-<br>
-<button type="submit" class="btn btn-warning"><span class="glyphicon glyphicon-search"></span> Vyhľadaj</button>
+ <button type="submit" class="btn btn-warning"> SPAT</button>
 
                 
 
-  </div>
+  
 
   
 
-  </form>
+ 
 
-  </div>
 
-  </div>
 
-  <div class="col-md-4"><img src="logomap.JPG" class="img-responsive" style="width:650px;  height:200px;
-
-						margin-top:40px; margin-left:-50px;"></div>
-
-  </div>
-
-    <hr>
+      <hr>
 
       <div class="row">
 
@@ -236,7 +246,7 @@
 
                   <h4 class="nadpisobr">Praha</h4>
 
-                <A HREF="http://dorabus.esy.es/page_Praha.php#"><img src="praha1.jpg" class="img-responsive img-rounded"  alt="Image">
+               <A HREF="http://dorabus.esy.es/page_Praha.php#"><img src="praha1.jpg" class="img-responsive img-rounded"  alt="Image">
 
             </a> 
 
@@ -260,7 +270,7 @@
 
                 <A HREF="http://dorabus.esy.es/page_Rim.php#"><img src="rim1.jpg" class="img-responsive img-rounded"  alt="Image">
 
-            </a>  
+            </a> 
 
               </div>
 
@@ -322,11 +332,32 @@
 
       </div>
 
+      <script>
+
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+
+
+  ga('create', 'UA-88354099-1', 'auto');
+
+  ga('send', 'pageview');
+
+
+
+</script>
+
+</div>
+
+
+
 </body>
 
 
 
 </html>
-
-
-

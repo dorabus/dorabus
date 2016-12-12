@@ -4,7 +4,7 @@
 
 <head>
 
-  <title>Dora bus</title>
+<title>Spojenia</title>
 
   <meta charset="utf-8">
 
@@ -31,6 +31,8 @@
 </head>
 
 <body>
+
+
 
 <div class="container">
 
@@ -64,7 +66,7 @@
 
       </button>
 
-      <a class="navbar-brand" href="index.php" href="#"><img src="png4.png" alt="logonavbar" class="navlogo" style="width:95px;  max-height:70px;
+        <a class="navbar-brand" href="index.php" href="#"><img src="png4.png" alt="logonavbar" class="navlogo" style="width:95px;  max-height:70px;
 
 						margin-top:-12px;"></a>
 
@@ -74,7 +76,9 @@
 
       <ul class="nav navbar-nav">
 
-        <li><a href="index.php" href="#">Vyhladanie spojenia</a></li>
+        <li><a href="index.php" href="#">Vzh�adanie spojenia</a></li>
+
+
         <li><a href="kontakt.php" href="#">Kontakt</a></li>
 
         <li><a href="o_nas.php" href="#">O nas</a></li>
@@ -97,176 +101,107 @@
 
 </div>
 
-      <div class="row odsunhore">
-
-        <div class="col-md-4">
-
-            <h4 class="nadpisobr">Vieden</h4>
-
-           <A HREF="http://dorabus.esy.es/page_Vieden2.php#"><img src="vieden1.jpg" class="img-responsive img-rounded"  alt="Image">
-
-            </a>
-
-        </div>
-
-        <div class="col-md-4">
-
-        <h4 class="nadpisobr">Londyn</h4>
-
-           <A HREF="http://dorabus.esy.es/page_London.php#"><img src="london.jpg" class="img-responsive img-rounded"  alt="Image">
-
-            </a>
-
-        </div>
-
-        <div class="col-md-4">
-
-        <h4 class="nadpisobr">Krakow</h4>
-
-          <A HREF="http://dorabus.esy.es/page_Krakow.php#"><img src="Krakow.jpg" class="img-responsive img-rounded"  alt="Image">
-
-            </a> 
-
-        </div>
-
-      </div>
-
-      <hr>
-
-      
-
-     <div class="row">
-
-    <div class="col-md-8">
-
-    <form action="cesta1.php" method="POST">
-
-<div class="container">
-
-<br>
-
-  <div class="col-md-6 ">
-
-  <h2 class="text-center red" id="Booking">Vyhľadanie spojenia</h2>
-
-  <p><b>Výber zájazdu:</b></p>
-
-  <select class="selectpicker form-control" multiple title="Zadajte" name="abc" id="haha" data-live-search="true">
-
-    <?php
-
-    Include('connect.php');
-
-    $sql = "SELECT DISTINCT Trat FROM Zajazdy";
-
-    $result = mysql_query($sql);
-
-   
-
-       
-
-    while($row = mysql_fetch_array($result))
-
-    {
-
-         ?>
-
-    
-
-          <option>  <?php echo $row['Trat']; ?> </option>
-
-          <?php
-
-};
 
 
 
-       ?>
+
+
+
+  <div><h2>Vyhľadané spojenia</h2></div>
 
  
 
+  <?php
 
+include("connect.php");
 
- </select>
+$prem1 = $_POST["abc"];
 
-<p><b>Výber dátumu: </b></p>  
-
-
-
-<input style="width:268px;" type="date" name="abc2" max="2017-12-31" size="140">
+$prem2 = $_POST['abc2'];
 
 
 
 
 
-<br>
+$sql = "SELECT * FROM Zajazdy WHERE  Trat = '".$prem1."' AND Kedy = '".$prem2."'";
 
-<br>
-<button type="submit" class="btn btn-warning"><span class="glyphicon glyphicon-search"></span> Vyhľadaj</button>
+$result = mysql_query($sql);
 
-                
+$row = mysql_fetch_array($result);
 
-  </div>
+
+
+if($prem2 == $row['Kedy']) {    
+
+     echo '<font size="4"'." face='Arial'>";
+
+	   echo  "Zájad: " .$row['Trat']."<br>";
+
+     echo    " Dátum: " .$row['Kedy']. "<br> ";
+
+     echo " " .$row['Popos']. "<br> " ;
+
+     echo "Cena: " .$row['Cena']. " Eur "."<br> " ;
+
+      /*
+
+      echo '<form action="index.php" method="POST">';
+
+      echo '<input type="submit" class="btn btn-warning" value="SPAŤ" ';
+
+      echo '</form>';
+
+     echo '<form action="objednat.php" method="POST">'.'<input type="submit" class="btn btn-warning" value="OBJEDNAŤ">';  */
+
+    echo '<font size="2"'." face='Arial'>"; 
+
+    }
+
+    else { 
+
+    echo '<font size="4"'." face='Arial'>";
+
+    echo "Ľutujeme, ale vo Vami zvolenom termíne nie je žiadna cesta do vybranej destinácie. ". "<br>" ;
+
+    /*echo '<form action="index.php" method="POST">';
+
+    echo '<input type="submit" class="btn btn-warning" value="SPAŤ">';  */                          
+
+    echo '<font size="2"'." face='Arial'>"; 
+
+    }
+
+?>
+
+   
+
+     <div class="row">
+
+        <div class="col-md-1"> 
+
+       <form action="index.php" method="POST">
+
+       <button type="submit" class="btn btn-warning"> SPAŤ</button>
+
+       </form>  </div>
+
+         <div class="col-md-11">
+
+          <form action="objednat.php" method="POST">
+
+       <button type="submit" class="btn btn-warning"> OBJEDNAŤ</button>
+
+       </form> </div>
+
+       </div>
+
+    <br>
+
+    
+
+    
 
   
-
-  </form>
-
-  </div>
-
-  </div>
-
-  <div class="col-md-4"><img src="logomap.JPG" class="img-responsive" style="width:650px;  height:200px;
-
-						margin-top:40px; margin-left:-50px;"></div>
-
-  </div>
-
-    <hr>
-
-      <div class="row">
-
-       <div class="col-sm-12"><h3></h3>
-
-       </div> 
-
-             <div class="row odsunhore">
-
-              <div class="col-md-4">
-
-                  <h4 class="nadpisobr">Praha</h4>
-
-                <A HREF="http://dorabus.esy.es/page_Praha.php#"><img src="praha1.jpg" class="img-responsive img-rounded"  alt="Image">
-
-            </a> 
-
-                
-
-              </div>
-
-              <div class="col-md-4">
-
-              <h4 class="nadpisobr">Pariz</h4>
-
-                <A HREF="http://dorabus.esy.es/page_Pariz.php#"><img src="paris1.jpg" class="img-responsive img-rounded " alt="Image">
-
-            </a> 
-
-              </div>
-
-              <div class="col-md-4">
-
-              <h4 class="nadpisobr">Rim</h4>
-
-                <A HREF="http://dorabus.esy.es/page_Rim.php#"><img src="rim1.jpg" class="img-responsive img-rounded"  alt="Image">
-
-            </a>  
-
-              </div>
-
-            </div>
-
-      </div>
 
       <hr>
 
@@ -322,11 +257,32 @@
 
       </div>
 
+      <script>
+
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+
+
+  ga('create', 'UA-88354099-1', 'auto');
+
+  ga('send', 'pageview');
+
+
+
+</script>
+
+</div>
+
+
+
 </body>
 
 
 
 </html>
-
-
-

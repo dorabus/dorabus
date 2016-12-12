@@ -4,7 +4,7 @@
 
 <head>
 
-  <title>Dora bus</title>
+<title>Kontakt</title>
 
   <meta charset="utf-8">
 
@@ -32,6 +32,8 @@
 
 <body>
 
+
+
 <div class="container">
 
   <div class="row">
@@ -46,7 +48,7 @@
 
   <div class="row">
 
-        <nav class="navbar navbar-default obly">
+         <nav class="navbar navbar-default obly">
 
   <div class="container-fluid">
 
@@ -97,132 +99,121 @@
 
 </div>
 
-      <div class="row odsunhore">
-
-        <div class="col-md-4">
-
-            <h4 class="nadpisobr">Vieden</h4>
-
-           <A HREF="http://dorabus.esy.es/page_Vieden2.php#"><img src="vieden1.jpg" class="img-responsive img-rounded"  alt="Image">
-
-            </a>
-
-        </div>
-
-        <div class="col-md-4">
-
-        <h4 class="nadpisobr">Londyn</h4>
-
-           <A HREF="http://dorabus.esy.es/page_London.php#"><img src="london.jpg" class="img-responsive img-rounded"  alt="Image">
-
-            </a>
-
-        </div>
-
-        <div class="col-md-4">
-
-        <h4 class="nadpisobr">Krakow</h4>
-
-          <A HREF="http://dorabus.esy.es/page_Krakow.php#"><img src="Krakow.jpg" class="img-responsive img-rounded"  alt="Image">
-
-            </a> 
-
-        </div>
-
-      </div>
-
-      <hr>
-
-      
-
-     <div class="row">
-
-    <div class="col-md-8">
-
-    <form action="cesta1.php" method="POST">
-
-<div class="container">
-
-<br>
-
-  <div class="col-md-6 ">
-
-  <h2 class="text-center red" id="Booking">Vyhľadanie spojenia</h2>
-
-  <p><b>Výber zájazdu:</b></p>
-
-  <select class="selectpicker form-control" multiple title="Zadajte" name="abc" id="haha" data-live-search="true">
-
-    <?php
-
-    Include('connect.php');
-
-    $sql = "SELECT DISTINCT Trat FROM Zajazdy";
-
-    $result = mysql_query($sql);
-
-   
-
-       
-
-    while($row = mysql_fetch_array($result))
-
-    {
-
-         ?>
-
-    
-
-          <option>  <?php echo $row['Trat']; ?> </option>
-
-          <?php
-
-};
 
 
+<div><h1>Kontakt</h1></div>
 
-       ?>
+
 
  
 
 
 
- </select>
-
-<p><b>Výber dátumu: </b></p>  
+<br>
 
 
 
-<input style="width:268px;" type="date" name="abc2" max="2017-12-31" size="140">
-
-
-
-
+<h3>Nonstop zákaznícka linka:</h3> +421904 888 888
 
 <br>
 
 <br>
-<button type="submit" class="btn btn-warning"><span class="glyphicon glyphicon-search"></span> Vyhľadaj</button>
 
-                
+
+
+   
+
+<div id="contact-additional-info" class="">
+
+  <div class="col-lg-2 col-md-3 col-sm-4 col-xs-12">
+
+    <h4>Informácie o doprave</h4>
+
+ <span><strong>Telefon:</strong> <a href="">+421024741</a></span>
+
+<p>    <span><strong>e-mail:</strong> <a href="info@dorabus.sk">info@dorabus.sk</a></span>
+
+	
 
   </div>
 
   
 
-  </form>
+ 
+
+
+
+  <div class="col-lg-2 col-md-3 col-sm-4 col-xs-12">
+
+    <h4>Straty a nálezy</h4>
+
+    <span><strong>Telefon:</strong> <a href="">+421024741</a></span>
+
+   <p> <span><strong>e-mail:</strong> <a href="">straty@dorabus.sk</a></span></p>
 
   </div>
 
+  
+
+  
+
+
+
+  <div class="col-lg-2 col-md-3 col-sm-4 col-xs-12">
+
+    <h4>Rezervácie</h4>
+
+    <span><strong>Telefon:</strong> <a href="">+421024741</a></span>
+
+    <p><span><strong>e-mail:</strong> <a href="">predaj@dorabus.sk</a></span></p>
+
+  </div>  
+
+  
+
+
+
+
+
+  <div class="col-lg-2 col-md-3 col-sm-4 col-xs-12">
+
+    <h4>Straty a nálezy</h4>
+
+ <span><strong>Telefon:</strong> <a href="">+421024741</a></span>
+
+   <p> <span><strong>e-mail:</strong> <a href="mailto:straty@dorabus.sk">straty@dorabus.sk</a></span></p>
+
+	
+
   </div>
 
-  <div class="col-md-4"><img src="logomap.JPG" class="img-responsive" style="width:650px;  height:200px;
+ 
 
-						margin-top:40px; margin-left:-50px;"></div>
+
+
+  <div class="col-lg-2 col-md-3 col-sm-4 col-xs-12">
+
+    <h4>Pripomienky a sťažnosti</h4>
+
+ <span><strong>Telefon:</strong> <a href="">+421024741</a></span>
+
+   <p> <span><strong>e-mail:</strong> <a href="mailto:pripomienky@dorabus.sk">staznost@dorabus.sk</a></span></p>
+
+	
 
   </div>
 
-    <hr>
+ </div>
+
+
+
+
+
+ 
+
+
+
+       <hr>
 
       <div class="row">
 
@@ -236,7 +227,7 @@
 
                   <h4 class="nadpisobr">Praha</h4>
 
-                <A HREF="http://dorabus.esy.es/page_Praha.php#"><img src="praha1.jpg" class="img-responsive img-rounded"  alt="Image">
+               <A HREF="http://dorabus.esy.es/page_Praha.php#"><img src="praha1.jpg" class="img-responsive img-rounded"  alt="Image">
 
             </a> 
 
@@ -260,13 +251,25 @@
 
                 <A HREF="http://dorabus.esy.es/page_Rim.php#"><img src="rim1.jpg" class="img-responsive img-rounded"  alt="Image">
 
-            </a>  
+            </a> 
 
               </div>
 
             </div>
 
       </div>
+
+
+
+ 
+
+
+
+               
+
+  
+
+  
 
       <hr>
 
@@ -322,11 +325,32 @@
 
       </div>
 
+      <script>
+
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+
+
+  ga('create', 'UA-88354099-1', 'auto');
+
+  ga('send', 'pageview');
+
+
+
+</script>
+
+</div>
+
+
+
 </body>
 
 
 
 </html>
-
-
-
